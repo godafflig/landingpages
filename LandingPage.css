@@ -5,6 +5,55 @@
   box-sizing: border-box;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input,
+textarea,
+select {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
 .landing-page {
   width: 100%;
   overflow-x: hidden;
@@ -14,11 +63,12 @@
 .container {
   display: flex;
   flex-direction: column;
-
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
+
 
 /* Hero Section */
 .hero-section {
@@ -35,6 +85,7 @@
   object-fit: cover;
   left: 0;
   top: 0;
+  background-color: #1F2937;
 }
 
 .hero-overlay {
@@ -62,6 +113,16 @@
   line-height: normal;
 }
 
+@media (max-width: 768px) {
+  .header {
+    left: 24px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -79,6 +140,7 @@
   font-weight: 700;
   line-height: 75px;
   letter-spacing: -1.2px;
+  margin-top: 12%;
 }
 
 .hero-title em {
@@ -89,9 +151,9 @@
   color: #FFF;
   text-align: center;
   font-family: Helvetica, -apple-system, Roboto, sans-serif;
-  font-size: 26px;
+  font-size: 41px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 48px;
   letter-spacing: -0.52px;
   margin-top: 24px;
 }
@@ -100,6 +162,11 @@
   display: flex;
   gap: 24px;
   margin-top: 48px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .btn-buy,
@@ -169,7 +236,8 @@
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.36px;
-  margin-bottom: 48px;
+  margin: 0px 50px 20px 50px;
+
 }
 
 .section-description {
@@ -229,14 +297,12 @@
 
 /* Why Choose Section */
 .why-choose-section {
-  padding: 96px 0;
   background: #FFF;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
   margin-top: 48px;
 }
 
@@ -309,10 +375,11 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  gap: 150px;
+  gap: 50px;
 }
 
 .security-card {
+
   background-color: #17232F;
   box-sizing: border-box;
   box-shadow: #1118271A 0px 8px 10px 0px, #1118270A 0px 20px 25px 0px;
@@ -325,8 +392,9 @@
   height: 200px;
   width: 100%;
   flex-direction: column;
-  gap: 16px;
-  padding: 16px 24px;
+  gap: 9px;
+  padding: 15px;
+
 }
 
 .security-icon {
@@ -361,7 +429,6 @@
 .security-image-wrapper {
   position: relative;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 .security-image {
@@ -412,10 +479,18 @@
   padding: 96px 0;
   background: #F3F4F6;
   height: 1026px;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .selling-steps-section {
+    height: auto;
+    padding: 64px 0;
+  }
 }
 
 .steps-timeline {
@@ -424,7 +499,7 @@
   align-items: center;
   gap: 400px;
   margin: 64px 0 48px;
-  position: relative;
+
 }
 
 .step-number-wrapper {
@@ -479,23 +554,104 @@
   font-weight: 400;
   line-height: 26px;
   letter-spacing: -0.36px;
+  margin: 0px 50px 0px 50px;
+
 }
+
+.questionnaire-section {
+  display: flex;
+  justify-content: space-between;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #1F2937;
+}
+
+.questionnaire-content {
+  width: 100%;
+  max-width: 380px;
+  padding-bottom: 50px;
+}
+
+.questionnaire-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.questionnaire-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.questionnaire-content label {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionnaire-content input,
+.questionnaire-content select {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.questionnaire-content button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.questionnaire-content button:hover {
+  background: #333;
+}
+
+/* Image à droite */
+.questionnaire-background {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.questionnaire-section>img {
+   border-radius: 0 ;
+
+  }
 
 /* Questionnaire Section */
-.questionnaire-section {
-  position: relative;
-  height: 465px;
-  overflow: hidden;
+
+@media screen and (max-width: 768px) {
+  .questionnaire-section>img {
+    visibility: hidden;
+
+  }
+
+  .questionnaire-section {
+    display: block;
+    position: relative;
+    background-color: #1F2937;
+    height: 600px;
+    overflow: hidden;
+  }
 }
 
-.questionnaire-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  left: 0;
-  top: 0;
-}
+
 
 .questionnaire-overlay {
   position: absolute;
@@ -509,18 +665,20 @@
 }
 
 .questionnaire-content {
-  text-align: right;
+  text-align: left;
   max-width: 676px;
 }
 
 .questionnaire-title {
-  color: #FFF;
-  font-family: Helvetica, -apple-system, Roboto, sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 40px;
-  margin-bottom: 48px;
-  font-style: italic;
+    color: #FFF;
+    font-family: Helvetica, -apple-system, Roboto, sans-serif;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 48px;
+    font-style: italic;
+    text-align: left;
+    margin-top: 10px;
 }
 
 .questionnaire-subtitle {
@@ -664,7 +822,8 @@
   }
 
   .hero-subtitle {
-    font-size: 20px;
+    font-size: 41px;
+    margin: 0 50px 0 50px;
   }
 
   .categories-grid {
@@ -685,7 +844,7 @@
   }
 
   .steps-timeline {
-    gap: 100px;
+    gap: 10px;
   }
 
   .footer-content {
@@ -748,7 +907,8 @@
   }
 
   .questionnaire-title {
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .footer-content {

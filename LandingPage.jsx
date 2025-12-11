@@ -21,50 +21,12 @@ const LandingPage = () => {
               Votre <em>marketplace</em> de confiance pour l'équipement sportif
             </h2>
             <p className="hero-subtitle">
-              Achetez et vendez du matériel de montagne et de sport en toute sécurité
+              La plateforme qui redonne une seconde vie au matériel sportif de montagne. Fiable, simple & éco-responsable
             </p>
-            <div className="hero-actions">
-              <button className="btn-buy">
-                <a href="#buyerSection">
-                  <svg className="btn-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clipPath="url(#clip0_77_20)">
-                      <path d="M0 0.84375C0 0.376172 0.376172 0 0.84375 0H2.44336C3.2168 0 3.90234 0.45 4.22227 1.125H18.6715C19.5961 1.125 20.2711 2.00391 20.0285 2.89688L18.5871 8.25117C18.2883 9.35508 17.2863 10.125 16.1438 10.125H6.00117L6.19102 11.127C6.26836 11.5242 6.61641 11.8125 7.0207 11.8125H17.1562C17.6238 11.8125 18 12.1887 18 12.6562C18 13.1238 17.6238 13.5 17.1562 13.5H7.0207C5.8043 13.5 4.76016 12.6352 4.53516 11.4434L2.72109 1.91602C2.69648 1.78242 2.58047 1.6875 2.44336 1.6875H0.84375C0.376172 1.6875 0 1.31133 0 0.84375ZM4.5 16.3125C4.5 16.0909 4.54365 15.8715 4.62845 15.6667C4.71326 15.462 4.83756 15.276 4.99426 15.1193C5.15096 14.9626 5.33698 14.8383 5.54172 14.7535C5.74646 14.6686 5.96589 14.625 6.1875 14.625C6.40911 14.625 6.62854 14.6686 6.83328 14.7535C7.03802 14.8383 7.22404 14.9626 7.38074 15.1193C7.53744 15.276 7.66174 15.462 7.74655 15.6667C7.83135 15.8715 7.875 16.0909 7.875 16.3125C7.875 16.5341 7.83135 16.7535 7.74655 16.9583C7.66174 17.163 7.53744 17.349 7.38074 17.5057C7.22404 17.6624 7.03802 17.7867 6.83328 17.8715C6.62854 17.9564 6.40911 18 6.1875 18C5.96589 18 5.74646 17.9564 5.54172 17.8715C5.33698 17.7867 5.15096 17.6624 4.99426 17.5057C4.83756 17.349 4.71326 17.163 4.62845 16.9583C4.54365 16.7535 4.5 16.5341 4.5 16.3125ZM16.3125 14.625C16.7601 14.625 17.1893 14.8028 17.5057 15.1193C17.8222 15.4357 18 15.8649 18 16.3125C18 16.7601 17.8222 17.1893 17.5057 17.5057C17.1893 17.8222 16.7601 18 16.3125 18C15.8649 18 15.4357 17.8222 15.1193 17.5057C14.8028 17.1893 14.625 16.7601 14.625 16.3125C14.625 15.8649 14.8028 15.4357 15.1193 15.1193C15.4357 14.8028 15.8649 14.625 16.3125 14.625Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_77_20">
-                        <path d="M0 0H20.25V18H0V0Z" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  Acheter
-                </a>
-              </button>
-              <button className="btn-sell">
-                <a href="#heroSection">
-                  <svg
-                    className="btn-icon"
-                    width="21"
-                    height="18"
-                    viewBox="0 0 21 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_77_26)">
-                      <path
-                        d="M0 0.84375C0 0.376172 0.376172 0 0.84375 0H2.44336C3.2168 0 3.90234 0.45 4.22227 1.125H18.6715C19.5961 1.125 20.2711 2.00391 20.0285 2.89688L18.5871 8.25117C18.2883 9.35508 17.2863 10.125 16.1438 10.125H6.00117L6.19102 11.127C6.26836 11.5242 6.61641 11.8125 7.0207 11.8125H17.1562C17.6238 11.8125 18 12.1887 18 12.6562C18 13.1238 17.6238 13.5 17.1562 13.5H7.0207C5.8043 13.5 4.76016 12.6352 4.53516 11.4434L2.72109 1.91602C2.69648 1.78242 2.58047 1.6875 2.44336 1.6875H0.84375C0.376172 1.6875 0 1.31133 0 0.84375ZM4.5 16.3125C4.5 16.0909 4.54365 15.8715 4.62845 15.6667C4.71326 15.462 4.83756 15.276 4.99426 15.1193C5.15096 14.9626 5.33698 14.8383 5.54172 14.7535C5.74646 14.6686 5.96589 14.625 6.1875 14.625C6.40911 14.625 6.62854 14.6686 6.83328 14.7535C7.03802 14.8383 7.22404 14.9626 7.38074 15.1193C7.53744 15.276 7.66174 15.462 7.74655 15.6667C7.83135 15.8715 7.875 16.0909 7.875 16.3125C7.875 16.5341 7.83135 16.7535 7.74655 16.9583C7.66174 17.163 7.53744 17.349 7.38074 17.5057C7.22404 17.6624 7.03802 17.7867 6.83328 17.8715C6.62854 17.9564 6.40911 18 6.1875 18C5.96589 18 5.74646 17.9564 5.54172 17.8715C5.33698 17.7867 5.15096 17.6624 4.99426 17.5057C4.83756 17.349 4.71326 17.163 4.62845 16.9583C4.54365 16.7535 4.5 16.5341 4.5 16.3125ZM16.3125 14.625C16.7601 14.625 17.1893 14.8028 17.5057 15.1193C17.8222 15.4357 18 15.8649 18 16.3125C18 16.7601 17.8222 17.1893 17.5057 17.5057C17.1893 17.8222 16.7601 18 16.3125 18C15.8649 18 15.4357 17.8222 15.1193 17.5057C14.8028 17.1893 14.625 16.7601 14.625 16.3125C14.625 15.8649 14.8028 15.4357 15.1193 15.1193C15.4357 14.8028 15.8649 14.625 16.3125 14.625Z"
-                        fill="#1F2937"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_77_26">
-                        <path d="M0 0H20.25V18H0V0Z" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  Vendre
-                </a>
-              </button>
-            </div>
+            <p>
+              <a href="#form" className="hero-button"><button>Je deviens,
+                bêta-testeur !</button></a>
+            </p>
           </div>
         </div>
       </section>
@@ -293,22 +255,53 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Questionnaire Section */}
-      <section className="questionnaire-section">
+      <section id="form" className="questionnaire-section">
+
+        {/* Colonne gauche : formulaire */}
+        <div className="left">
+          <div className="questionnaire-content">
+            <h1 className="questionnaire-title">Je deviens, bêta-testeur !</h1>
+
+            <form
+              action="https://formspree.io/f/xzznkbne"
+              method="POST"
+            >
+              <label>
+                Email :
+                <input type="email" name="email" required />
+              </label>
+
+              <label>
+                Nom :
+                <input type="text" name="nom" required />
+              </label>
+
+              <label>
+                Prénom :
+                <input type="text" name="prenom" required />
+              </label>
+
+              <label>
+                Vous êtes intéressé pour :
+                <select name="interet" required>
+                  <option value="vendre">Vendre</option>
+                  <option value="acheter">Acheter</option>
+                  <option value="les deux">Les deux</option>
+                </select>
+              </label>
+
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+        </div>
+
+        {/* Colonne droite : image */}
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/0db2e5f0d4982d476aaa7717b34855e9b16c3baf?width=4382"
           alt=""
           className="questionnaire-background"
         />
-        <div className="questionnaire-overlay">
-          <div className="questionnaire-content">
-            <h1 className="questionnaire-title">Formulaire</h1>
-            <p className="questionnaire-subtitle">
-              Aidez-nous à remplir ce formulaire afin que nous puissions l'améliorer au maximum.
-            </p>
-            <a href="https://forms.gle/oRM58wESHzgrdtoa9" className="questionnaire-link">Questionnaire</a>
-          </div>
-        </div>
+
       </section>
 
       {/* Footer */}
